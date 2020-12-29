@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&family=Roboto&family=Staatliches&display=swap');
+
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'content';
+@import 'utility';
+
+
+$backgroundColor : #e6ebec;
+$mainColor : #e2dddd;
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    height:100vh;
+    width: calc(100vw - (100vw - 100%));
+    padding:0px;
+    margin:0px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color: $backgroundColor;
+    
+}
+
+header {
+    height:30%;
+    background-color:#fff;
+    
+}
+
+//parent min-height not allowing child element to
+// have a specified height. Browser bug for 10+ years
+//Workaround done in <main>'s CSS
+main {
+    min-height:300%;
+    width:97%;
+    margin-left:1.5%;
+    display:flex;
+    flex-direction:column;
+    background-color:$mainColor;
+
+}
+
+
+
+footer {
+    width:100%;
+    min-height:50%;
+    background-color:#344252;
+}

@@ -1,0 +1,31 @@
+$backgroundColor : #e6ebec;
+
+#root {
+    height:100%;
+    flex:1;
+    background-color: $backgroundColor;
+
+   
+
+    $reservedContainerHeight : 250px;
+    $RCW-1 : 70%;
+    $RCW-2 : 30%;
+    #reserved-container {
+        height:$reservedContainerHeight;
+        display:grid;
+        grid-template-columns:$RCW-1 $RCW-2;
+
+
+        #reserved-column-1 {
+            background-color: #fff;
+        }
+        #reserved-column-2 {
+            background-color: #fff;
+        }
+
+    }
+
+
+}
+
+

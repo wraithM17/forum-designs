@@ -1,0 +1,44 @@
+$primaryColor :  #3e6188;
+
+#header-container {
+    height:100%;
+    width:100%;
+
+    #header-top {
+        height:70%;
+        width:100%;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+
+        #header-top-left {
+            height:100%;
+            width:100%;
+
+
+        }
+        #header-top-middle {
+           
+        }
+        #header-top-right {
+
+        }
+
+
+    }
+    #header-bottom {
+        height:30%;
+        background-color: $primaryColor;
+    }
+
+}
+
+
+#header-logo {
+    height:100%;
+    width:100%;
+    display:inline-block;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}

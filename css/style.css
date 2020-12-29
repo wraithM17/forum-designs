@@ -83,11 +83,14 @@
   margin-left: 1.5%;
 }
 
+#alert-container #announcement {
+  margin-left: 2%;
+}
+
 #alert-container span {
-  font-size: 150%;
+  font-size: 3.75vh;
   font-family: 'Bree Serif',verdana,serif;
   color: #1f4b7f;
-  margin-left: 2%;
 }
 
 #category-header {
@@ -120,7 +123,7 @@
   display: grid;
   -ms-grid-columns: 30% 70%;
       grid-template-columns: 30% 70%;
-  height: 20vh;
+  height: 12.5vh;
   width: 100%;
   border-bottom: 1px solid #e7eef0;
 }
@@ -145,6 +148,62 @@
 
 #category-main .category-item .category-stats {
   height: 100%;
+}
+
+#recent-threads-main {
+  min-height: 75vh;
+  width: 97%;
+  margin-left: 1.5%;
+}
+
+#recent-threads-main .recent-threads-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  min-height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid #e7eef0;
+}
+
+#recent-threads-main .recent-threads-item .recent-threads-info {
+  height: 100%;
+  width: 100%;
+}
+
+#recent-threads-main .recent-threads-item .recent-threads-info .recent-threads-name {
+  color: #525c66;
+  font-weight: 600;
+  font-family: 'Roboto',verdana;
+  font-size: 2.4vh;
+  position: relative;
+  top: 40%;
+  left: 2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#recent-threads-main .recent-threads-item .recent-threads-stats {
+  height: 100%;
+}
+
+#recent-threads-header {
+  height: 10vh;
+  background-color: #292727;
+  width: 97%;
+  margin-left: 1.5%;
+}
+
+#recent-threads-header h1 {
+  color: #fff;
+  font-size: 6vh;
+  font-family: 'Staatliches',tahoma;
+  font-weight: 300;
+  position: relative;
+  top: 50%;
+  left: 1%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .divider {
@@ -185,6 +244,7 @@ body {
   width: calc(100vw - (100vw - 100%));
   padding: 0px;
   margin: 0px;
+  font-size: 2.1vh;
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: #e6ebec;

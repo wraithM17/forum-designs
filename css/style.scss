@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&family=Roboto&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Poppins&family=Roboto&family=Staatliches&display=swap');
 
+
+@import 'variables';
 @import 'header';
 @import 'main';
 @import 'footer';
@@ -7,11 +9,12 @@
 @import 'utility';
 
 
-$backgroundColor : #e6ebec;
-$mainColor : #e2dddd;
+
+
 
 * {
     box-sizing: border-box;
+    
 }
 
 
@@ -50,6 +53,6 @@ main {
 
 footer {
     width:100%;
-    min-height:50%;
-    background-color:#344252;
+    height:60vh;
+    background-color:$footerColor;
 }

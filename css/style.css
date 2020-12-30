@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&family=Roboto&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Poppins&family=Roboto&family=Staatliches&display=swap");
+/* COLOR VARIABLES */
 #header-container {
   height: 100%;
   width: 100%;
@@ -43,7 +44,7 @@
 }
 
 #root #reserved-container {
-  height: 250px;
+  height: 175px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 70% 30%;
@@ -56,6 +57,42 @@
 
 #root #reserved-container #reserved-column-2 {
   background-color: #fff;
+}
+
+#footer-info {
+  height: 25%;
+  background-color: #2a3441;
+}
+
+#footer-info #footer-text {
+  color: #fff;
+  font-size: 2.3vh;
+  font-family: lato;
+  position: relative;
+  top: 90%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#footer-container {
+  height: 75%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+}
+
+#footer-middle {
+  height: 100%;
+  width: 100%;
+}
+
+#footer-middle #footer-middle-top {
+  height: 50%;
+}
+
+#footer-middle #footer-middle-bottom {
+  height: 50%;
 }
 
 #content {
@@ -135,7 +172,7 @@
 }
 
 #category-main .category-item .category-info .category-name {
-  color: #0756af;
+  color: #1060bb;
   font-weight: 600;
   font-family: 'Poppins',verdana,helvetica;
   font-size: 3vh;
@@ -175,10 +212,11 @@
   color: #525c66;
   font-weight: 600;
   font-family: 'Roboto',verdana;
-  font-size: 2.4vh;
+  font-size: 2.3vh;
+  overflow-x: hidden;
   position: relative;
-  top: 40%;
-  left: 2%;
+  top: 50%;
+  left: 1%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -271,7 +309,7 @@ main {
 
 footer {
   width: 100%;
-  min-height: 50%;
+  height: 60vh;
   background-color: #344252;
 }
 /*# sourceMappingURL=style.css.map */
